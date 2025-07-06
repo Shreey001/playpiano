@@ -92,3 +92,44 @@ body {
       font-size: 0.3em;
     }
   }
+
+  /* Button reset styles to remove default styling */
+  button {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  /* Specific class for buttons with no background */
+  .bg-none {
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    outline: none !important;
+  }
+
+  /* Button with image styling */
+  .bg-none img {
+    display: block;
+    border: none;
+    outline: none;
+  }
+
+  /* Ensure the button doesn't have focus styles */
+  .bg-none:focus,
+  .bg-none:active,
+  .bg-none:hover {
+    outline: none;
+    border: none;
+    background: none;
+    box-shadow: none;
+  }
